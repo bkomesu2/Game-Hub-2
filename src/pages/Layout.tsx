@@ -7,14 +7,7 @@ import { Outlet } from "react-router";
 const Layout = () => {
   return (
     <>
-      <GridItem area="nav">
-        <NavBar />
-      </GridItem>
-      <Show above="lg">
-        <GridItem area="aside" paddingX={5}>
-          <GenreList></GenreList>
-        </GridItem>
-      </Show>
+      <NavBar />
       <Outlet />
     </>
   );
