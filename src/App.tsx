@@ -30,18 +30,6 @@ function App() {
           <GenreList></GenreList>
         </GridItem>
       </Show>
-      <GridItem area="main">
-        <Box paddingLeft={10}>
-          <GameHeading />
-          <Flex marginBottom={2}>
-            <Box marginRight={5}>
-              <PlatformSelector />
-            </Box>
-            <SortSelector />
-          </Flex>
-        </Box>
-        <GameGrid />
-      </GridItem>
     </Grid>
   );
 }
