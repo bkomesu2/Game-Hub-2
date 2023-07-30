@@ -4,7 +4,7 @@ import { isRouteErrorResponse, useRouteError } from "react-router";
 import NavBar from "../components/NavBar";
 
 const ErrorPage = () => {
-  const error = useRouteError();
+  const error: any = useRouteError();
   return (
     <>
       <NavBar />
@@ -13,7 +13,7 @@ const ErrorPage = () => {
         <Text>
           {isRouteErrorResponse(error)
             ? "This page does not Exist."
-            : "An unexpectd Error occured."}{" "}
+            : error.message}
         </Text>
       </Box>
     </>
