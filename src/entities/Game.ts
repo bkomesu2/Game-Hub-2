@@ -1,9 +1,13 @@
+import { Genre } from "./Genre";
 import { Platform } from "./Platform";
+import { Publisher } from "./publishers";
 
 export interface Game {
   id: string;
   name: string;
   slug: string;
+  genres: Genre[];
+  publishers: Publisher[];
   background_image: string;
   parent_platforms: { platform: Platform }[];
   metacritic: number;
