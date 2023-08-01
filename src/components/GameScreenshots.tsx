@@ -1,5 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import useScreenshots from "../hooks/useScreenShots";
+import useScreenshots from "../hooks/useScreenshots";
+import Screenshots from "../entities/Screenshots";
 
 interface Props {
   gameId: number;
@@ -15,7 +16,7 @@ const GameScreenShots = ({ gameId }: Props) => {
 
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={2}>
-      {imagesArr!.map((image) => (
+      {imagesArr!.map((image: Screenshots) => (
         <img key={image.id} src={image.image} />
       ))}
     </SimpleGrid>
