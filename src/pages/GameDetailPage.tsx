@@ -4,7 +4,6 @@ import ExpandableText from "../components/ExpandableText";
 import useGame from "../hooks/useGame";
 import GameAttributes from "../components/gameAttributes";
 import GameTrailers from "../components/GameTrailers";
-import useTrailers from "../hooks/useTrailers";
 import GameScreenShots from "../components/GameScreenshots";
 
 const gameDetailPage = () => {
