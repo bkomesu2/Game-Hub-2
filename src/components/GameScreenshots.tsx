@@ -14,7 +14,7 @@ const GameScreenShots = ({ gameId }: Props) => {
   if (!imagesArr) return null;
 
   return (
-    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+    <SimpleGrid columns={{ base: 1, md: 2 }} spacing={2}>
       {imagesArr!.map((image) => (
         <img key={image.id} src={image.image} />
       ))}
