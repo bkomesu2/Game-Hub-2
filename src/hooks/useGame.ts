@@ -9,5 +9,4 @@ const useGame = (slug: string) =>
     queryKey: ["game", slug],
     queryFn: () => apiClient.get(slug),
   });
-
 export default useGame;
